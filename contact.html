@@ -6,33 +6,32 @@
     <title>Contact Us - Rang Avdhut Art Studios</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="contact.css">
-    <script defer src="scripts.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>Contact Us</h1>
-        <div class="form-section">
+        <div class="content-section">
             <div class="contact-form">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" onclick="validateForm()">Send Message</button>
+                <form action="/submit" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
             <div class="separator"></div>
             <div class="contact-info">
                 <h2>Contact Information</h2>
-                <p><i class="fas fa-map-marker-alt"></i> Pitare Sankul, Devrukh, Ratnagiri </p>
-                <p><i class="fas fa-phone"></i> <a href="tel:+917774859212">+91 777 485 9212</a></p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:reachrangavdhut@gmail.com">reachrangavdhut@gmail.com</a></p>
+                <p><strong>Email:</strong> reachrangavdhut@gmail.com</p>
+                <p><strong>Phone:</strong> +91 77748 59212</p>
+                <p><strong>Address:</strong> Pitare sankul, Devrukh, Ratnagiri</p>
                 <div class="social-media">
-                    <a href="https://www.linkedin.com" target="_blank" class="link linkedin"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com" target="_blank" class="link insta"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.youtube.com" target="_blank" class="link yt"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Facebook">&#xf09a;</a>
+                    <a href="#" aria-label="Twitter">&#xf099;</a>
+                    <a href="#" aria-label="Instagram">&#xf16d;</a>
                 </div>
             </div>
         </div>
